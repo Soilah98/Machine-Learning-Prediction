@@ -70,6 +70,8 @@ Le prix d'un billet d'avion varie fortement selon la compagnie, le trajet, la cl
 
 ```
 ├── README.md
+├── Dockerfile
+├── docker-compose.yml
 ├── artifacts/
 │   ├── flight_price_model.joblib       # Modèle entraîné
 │   └── flight_price_model.meta.json    # Métadonnées du modèle
