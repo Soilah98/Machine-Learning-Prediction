@@ -16,6 +16,23 @@ Le prix d'un billet d'avion varie fortement selon la compagnie, le trajet, la cl
 
 ---
 
+## Démonstration
+
+L'application permet de renseigner les caractéristiques d'un vol et d'obtenir une estimation de son prix.
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="assets/Interface.png" alt="Interface de prédiction" width="550">
+    </td>
+    <td align="center">
+      <img src="assets/resultat.png" alt="Résultat de la prédiction" width="600">
+    </td>
+  </tr>
+</table>
+
+---
+
 ##  Dataset
 
 - **Source** : [Flight Price Prediction — Kaggle](https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction)

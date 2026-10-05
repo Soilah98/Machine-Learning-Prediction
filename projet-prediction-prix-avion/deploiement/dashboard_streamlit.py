@@ -179,9 +179,9 @@ def get_price_range(model, X_input):
 
 st.markdown("""
 <div class="hero">
-  <div class="hero-badge">✈ Powered by Machine Learning</div>
-  <div class="hero-title">Flight Price Finder</div>
-  <div class="hero-sub">Estimez le prix de votre vol en Inde en quelques secondes</div>
+  <div class="hero-badge">Machine learning · Vols intérieurs en Inde</div>
+  <div class="hero-title">Estimateur de prix de vols</div>
+  <div class="hero-sub">Un modèle entraîné sur 300 000 vols réels, déployé avec Docker</div>
 </div>
 """, unsafe_allow_html=True)
 
@@ -247,6 +247,7 @@ if run:
                 rate = get_eur_rate()
                 pred_eur = pred * rate
                 lo, hi = get_price_range(model, X_input)
+                lo_eur, hi_eur = lo * rate, hi * rate
             except Exception as e:
                 st.error(f"Erreur lors de la prédiction : {e}")
                 st.stop()
@@ -261,8 +262,10 @@ if run:
               <div class="price-eur">≈ {pred_eur:,.0f} €</div>
               <div class="price-note">Taux de change en temps réel · Roupies indiennes</div>
               <hr class="divider">
-              <div style="margin-bottom:.6rem">
-                <span class="pill pill-highlight">Fourchette indicative : {fmt_inr(lo)} – {fmt_inr(hi)}</span>
+              <div style="margin-bottom:.1rem">
+                  <div class="range-label">Fourchette indicative</div>
+                  <div class="range-inr">{fmt_inr(lo)} – {fmt_inr(hi)}</div>
+                  <div class="range-eur">≈ {lo_eur:,.0f} – {hi_eur:,.0f} €</div>
               </div>
               <div>
                 <span class="pill pill-highlight">{source_city} → {destination_city}</span>
