@@ -1,0 +1,9 @@
+.git
+.venv
+__pycache__/
+*.pyc
+notebooks/
+tests/
+.ipynb_checkpoints
+poetry.lock
+.DS_Store
