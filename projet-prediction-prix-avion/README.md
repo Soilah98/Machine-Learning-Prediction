@@ -98,6 +98,7 @@ Le prix d'un billet d'avion varie fortement selon la compagnie, le trajet, la cl
 - **Streamlit** : déploiement de l'application interactive
 - **Joblib** : sérialisation du modèle
 - **Matplotlib / Seaborn** : visualisation
+- **Docker**
 - HTML + CSS
 
 ---
