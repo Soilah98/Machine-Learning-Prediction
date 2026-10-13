@@ -7,3 +7,4 @@ tests/
 .ipynb_checkpoints
 poetry.lock
 .DS_Store
+copy_dashboard.py
